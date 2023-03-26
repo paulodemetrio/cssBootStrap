@@ -1,0 +1,9 @@
+body{
+    background-color: red;
+}
+
+nav ul{
+    list-style: none;
+    display: inline-flex;
+    color: yellow;
+}

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li:hover{
+    background-color: darkblue;
+    
+}
+
+nav ul li{
+    margin: 2px;
+    cursor: pointer;
+    transition: all 1.5s;
+}
+
+.menu{
+    display: flex;
+}
+
+.navegacao{
+    width: 80%;
+}
+
+.contato{
+    width: 20%;
+}
+
+.contato img{
+    float: right;
+    width: 40px;
+    height: 40px;
+    transition: all 0.7s;
+}
+
+.contato img:hover{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.circulo{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+.circulo:hover{
+    animation-duration: 3s;
+    animation-name: fadeout;
+}
+
+.mover{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background-color: blueviolet;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-duration: 5s;
+    animation-name: movimento;
+}
+
+/* Media Queries */
+
+@media(max-width : 399px){
+    body{
+        background-color: silver;
+    }
+
+    nav ul{
+        display: block;
+        color: blue;
+    }
+}
+
+@media(min-width : 400px){
+    body{
+        background-color: blue;
+    }
+
+    nav ul{
+        display: inline-flex;
+        color: white;
+    }
+}
+
+@media(min-width: 800px){
+    body{
+        background-color: red;
+    }
+
+    nav ul{
+        display: inline-flex;
+        color: yellow;
+    }
+}
+
+@keyframes fadeout{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes movimento{
+    0%{
+        margin-left: 0;
+    }100%{
+        margin-left: 97%;
+    }
+}

@@ -1,0 +1,9 @@
+body{
+    background-color: silver;
+}
+
+nav ul{
+    list-style: none;
+    display: block;
+    color: blue;
+}
